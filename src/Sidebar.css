@@ -1,0 +1,82 @@
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.collapse-button {
+  background-color: #3366ff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 10px;
+}
+
+.profile {
+  padding: 15px;
+  text-align: left-center;
+}
+
+.profile h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.profile p {
+  font-size: 20px;
+  color: #bdc3c7;
+}
+
+.navigation,
+.resources,
+.connect {
+  padding: 20px;
+  font-size: 17px;
+}
+
+.navigation a,
+.resources a,
+.connect a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.sidebar.collapsed .icon {
+  margin-right: 10;
+}
+
+.navigation a:hover,
+.resources a:hover,
+.connect a:hover {
+  background-color: #34495e;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.resources h4,
+.connect h4 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #ecf0f1;
+}
